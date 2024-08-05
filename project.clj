@@ -1,8 +1,9 @@
-(defproject sodium/editor "0.1.0-SNAPSHOT"
+(defproject sodium/editor "lein-git-inject/version"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url "https://www.eclipse.org/legal/epl-2.0/"}
+  :plugins [[day8/lein-git-inject "0.0.13"]]
   :aliases {"fig" ["trampoline" "run" "-m" "figwheel.main"]}
   :dependencies [[org.clojure/clojure "1.11.1"]
                  [cljsjs/react "17.0.2-0"]
@@ -24,4 +25,6 @@
                                   [com.bhauman/rebel-readline-cljs "0.1.4"]
                                   [org.slf4j/slf4j-nop "1.7.30"]]
                    :resource-paths ["target"]
-                   :clean-targets ^{:protect false} ["target"]}})
+                   :clean-targets ^{:protect false} ["target"]}}
+  :release-tasks [["vcs" "assert-committed"]
+                  ["deploy"]])
