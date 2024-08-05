@@ -4,13 +4,22 @@
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :aliases {"fig" ["trampoline" "run" "-m" "figwheel.main"]}
-  :dependencies [[org.clojure/clojure "1.11.1"]]
+  :dependencies [[org.clojure/clojure "1.11.1"]
+                 [cljsjs/react "17.0.2-0"]
+                 [cljsjs/react-dom "17.0.2-0"]
+                 [reagent "1.1.1"]
+                 [re-frame "1.4.2"]
+                 ;; [day8.re-frame/tracing "0.6.2"]
+                 ;; [re-com "2.13.2"]
+                 ;; [re-pressed "0.3.2"]
+                 ]
   :main ^:skip-aot sodium-editor.core
   :target-path "target/%s"
   :source-paths ["src" "test"]
   :profiles {:uberjar {:aot :all
                        :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}
              :dev {:dependencies [[org.clojure/clojurescript "1.11.132"]
+                                  ;; [day8.re-frame/re-frame-10x "1.9.3"]
                                   [com.bhauman/figwheel-main "0.2.18"]
                                   [com.bhauman/rebel-readline-cljs "0.1.4"]
                                   [org.slf4j/slf4j-nop "1.7.30"]]
