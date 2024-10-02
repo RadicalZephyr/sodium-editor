@@ -1,4 +1,4 @@
-(ns sodium-editor.devcards.start-ui
+(ns sodium-editor.devcards
   (:require
     [devcards.core]
     ;; [sodium-editor.devcards...]

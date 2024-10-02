@@ -1,4 +1,4 @@
-{:main "sodium-editor.devcards.start-ui"
+{:main "sodium-editor.devcards"
  :devcards true
  :asset-path "/devcards/js/compiled/out"
  :output-to "resources/public/devcards/js/compiled/sodium-editor-devcards.js"
