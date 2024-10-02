@@ -1,10 +1,13 @@
 (defproject sodium/editor "lein-git-inject/version"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "Visual editor for Sodium programs."
+  :url "https://github.com/RadicalZephyr/sodium-editor"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url "https://www.eclipse.org/legal/epl-2.0/"}
-  :plugins [[day8/lein-git-inject "0.0.13"]]
-  :dependencies [[org.clojure/clojure "1.11.1"]
+  :scm {:name "git"
+        :url "https://github.com/RadicalZephyr/sodium-editor"}
+  :plugins [[day8/lein-git-inject "0.0.15"]]
+
+  :dependencies [[org.clojure/clojure "1.12.0"]
                  [cljsjs/react "18.2.0-0"]
                  [cljsjs/react-dom "18.2.0-0"]
                  [reagent "1.2.0"]
