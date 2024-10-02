@@ -4,4 +4,4 @@
   :open-url "http://[[server-hostname]]:[[server-port]]/test.html"
   :watch-dirs ["test" "src"]
   }
-{:main sodium.test-runner}
+{:main sodium-editor.devcards}

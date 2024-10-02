@@ -1,0 +1,10 @@
+{:main "sodium-editor.devcards.start-ui"
+ :devcards true
+ :asset-path "/devcards/js/compiled/out"
+ :output-to "resources/public/devcards/js/compiled/sodium-editor-devcards.js"
+ :output-dir "resources/public/devcards/js/compiled/out"
+ :recompile-dependents false
+ :preloads [devtools.preload]
+ :optimizations :none
+ :source-map-timestamp true
+ }
